@@ -10,7 +10,7 @@ class Medots < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Darwin_arm64.tar.gz"
-      sha256 "05ce0b66e31343f7087ff7b422461eb03ac8ad42d7250dd57007c6e0a941cc48"
+      sha256 "2716e4e456ce4c8acf47812dd04df1b3c78386afad4722aa5e5d002d96010346"
 
       def install
         bin.install "medots"
@@ -18,7 +18,7 @@ class Medots < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Darwin_x86_64.tar.gz"
-      sha256 "87530ac0f5d5d0c827e7dd7afdf960ab07821a198b5406c68730efe47ca1414e"
+      sha256 "c8d4710aa80239cd096126de31a5eaf5f03ddd543efa9c186ca03428d16c7402"
 
       def install
         bin.install "medots"
@@ -29,7 +29,7 @@ class Medots < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Linux_x86_64.tar.gz"
-      sha256 "182bb57b24075afb6aaa208a3f32f0a909119b26b0bec4fd5536c3b233b6a753"
+      sha256 "6fd0b65decd824dbb7f3855b7cc2267d3d3dfe8c7b1d15bea11d951c499d16da"
 
       def install
         bin.install "medots"
@@ -37,7 +37,7 @@ class Medots < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Linux_arm64.tar.gz"
-      sha256 "43930a732272341a0863e677353a5fc374c4d1930c4e77a1d8ce5f921fb246b2"
+      sha256 "7725d7abe6a82eec818b75a6913afaa847208512751720a9229771dd8f13219f"
 
       def install
         bin.install "medots"
