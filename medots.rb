@@ -5,20 +5,20 @@
 class Medots < Formula
   desc ""
   homepage "https://github.com/aminehmida/medots"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/aminehmida/medots/releases/download/v0.1.6/medots_0.1.6_Darwin_x86_64.tar.gz"
-      sha256 "c994e34134c00c23fa7d2ac6339f2620098d688bff82eb4f4c3d5d02ebc63a83"
+    if Hardware::CPU.arm?
+      url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Darwin_arm64.tar.gz"
+      sha256 "05ce0b66e31343f7087ff7b422461eb03ac8ad42d7250dd57007c6e0a941cc48"
 
       def install
         bin.install "medots"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/aminehmida/medots/releases/download/v0.1.6/medots_0.1.6_Darwin_arm64.tar.gz"
-      sha256 "d012b1c9e28eeffee5a484a5ab0f02c320181b708c7c85bd8f343fc2653bf57e"
+    if Hardware::CPU.intel?
+      url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Darwin_x86_64.tar.gz"
+      sha256 "87530ac0f5d5d0c827e7dd7afdf960ab07821a198b5406c68730efe47ca1414e"
 
       def install
         bin.install "medots"
@@ -28,16 +28,16 @@ class Medots < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aminehmida/medots/releases/download/v0.1.6/medots_0.1.6_Linux_x86_64.tar.gz"
-      sha256 "0e234faa75a450f7a312620cf1ec964288d211e7f27189529417820a683d5dae"
+      url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Linux_x86_64.tar.gz"
+      sha256 "182bb57b24075afb6aaa208a3f32f0a909119b26b0bec4fd5536c3b233b6a753"
 
       def install
         bin.install "medots"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aminehmida/medots/releases/download/v0.1.6/medots_0.1.6_Linux_arm64.tar.gz"
-      sha256 "bc5d89e6d607026843b2c89fcb44c148e76430b3b1a676f487c42fc0a2c602fc"
+      url "https://github.com/aminehmida/medots/releases/download/v0.1.7/medots_0.1.7_Linux_arm64.tar.gz"
+      sha256 "43930a732272341a0863e677353a5fc374c4d1930c4e77a1d8ce5f921fb246b2"
 
       def install
         bin.install "medots"
